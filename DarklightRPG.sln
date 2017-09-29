@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarklightRPG", "DarklightRPG.csproj", "{8156195B-B8A6-BAC1-B2DE-D874A6338C4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarklightRPG.Plugins", "DarklightRPG.Plugins.csproj", "{0D1AFA57-17AD-CDAA-66D6-B3151C985205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarklightRPG.Editor", "DarklightRPG.Editor.csproj", "{F67E2215-B8DE-05C5-48E7-661EAD678551}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8156195B-B8A6-BAC1-B2DE-D874A6338C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8156195B-B8A6-BAC1-B2DE-D874A6338C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8156195B-B8A6-BAC1-B2DE-D874A6338C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8156195B-B8A6-BAC1-B2DE-D874A6338C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D1AFA57-17AD-CDAA-66D6-B3151C985205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1AFA57-17AD-CDAA-66D6-B3151C985205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1AFA57-17AD-CDAA-66D6-B3151C985205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1AFA57-17AD-CDAA-66D6-B3151C985205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67E2215-B8DE-05C5-48E7-661EAD678551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67E2215-B8DE-05C5-48E7-661EAD678551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67E2215-B8DE-05C5-48E7-661EAD678551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67E2215-B8DE-05C5-48E7-661EAD678551}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
