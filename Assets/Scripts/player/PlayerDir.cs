@@ -52,10 +52,13 @@ public class PlayerDir : MonoBehaviour {
     //实例化点击效果
     void ShowClickEffect(Vector3 hitpoint)
     {
+     
         //将特效位置y轴向上浮动优化显示
-        hitpoint = new Vector3(hitpoint.x, hitpoint.y + 1f, hitpoint.z);
+        hitpoint = new Vector3(hitpoint.x, hitpoint.y+0.1f, hitpoint.z);
         //产生特效
         GameObject.Instantiate(effect_click_prefab,hitpoint,Quaternion.identity);
+    
+      
     }
     void LookAtTarget(Vector3 hitPoint)
     {   //获得目标位置坐标点

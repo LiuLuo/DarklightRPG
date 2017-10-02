@@ -226,6 +226,7 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\character creation\CharacterCreation.cs" />
     <Compile Include="Assets\Scripts\player\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\player\PlayerDir.cs" />

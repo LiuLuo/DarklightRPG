@@ -9,12 +9,12 @@ public enum PlayerState
 }
 
 public class PlayerMove : MonoBehaviour {
-    public float speed =3f;
+    public float speed;
     public PlayerState state = PlayerState.Idle;
     private PlayerDir dir;
     private CharacterController controller;
 
-    public bool isMoving = false;
+    public   bool isMoving = false;
 	// Use this for initialization
 	void Start () {
         //获取鼠标点击位置
@@ -30,7 +30,7 @@ public class PlayerMove : MonoBehaviour {
             isMoving = true;//正在移动
             state = PlayerState.Moving;//动画枚举类型
             controller.SimpleMove(transform .forward*speed);//使用角色控制器进行移动
-            Debug.Log(distance.ToString());//调试
+           // Debug.Log(distance.ToString());//调试
         }
         else
         {
