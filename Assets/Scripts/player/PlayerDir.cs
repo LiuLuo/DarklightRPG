@@ -17,9 +17,18 @@ public class PlayerDir : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //点击发射射线检测碰撞事件
-        if (Input.GetMouseButtonDown(0))
+     
+        if (Input.GetMouseButtonDown(0)&&!UICamera.isOverUI)
         {
-           Ray ray= Camera.main.ScreenPointToRay(Input.mousePosition);//将鼠标在屏幕点下的坐标转换为一条射线
+            //if (UICamera.hoveredObject == null)
+            //{
+            //    print("null");
+            //}
+            //else
+            //{
+            //    print(UICamera.hoveredObject.gameObject.name.ToString());
+            //}
+            Ray ray= Camera.main.ScreenPointToRay(Input.mousePosition);//将鼠标在屏幕点下的坐标转换为一条射线
             RaycastHit hitinfo;
             bool isCollier = Physics.Raycast(ray, out hitinfo);
             if (isCollier&&hitinfo.collider.tag==Tags.ground)

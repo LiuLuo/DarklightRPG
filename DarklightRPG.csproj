@@ -84,6 +84,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BarNpc.cs" />
     <Compile Include="Assets\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
     <Compile Include="Assets\Effect\Effects_02\ScrollUV.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
@@ -231,6 +232,7 @@
     <Compile Include="Assets\Scripts\player\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\player\PlayerDir.cs" />
     <Compile Include="Assets\Scripts\player\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\player\PlayerStatus.cs" />
     <Compile Include="Assets\Scripts\start\buttonContainer.cs" />
     <Compile Include="Assets\Scripts\start\MovieCamera.cs" />
     <Compile Include="Assets\Scripts\start\PressAnyKey.cs" />
