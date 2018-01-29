@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class buttonContainer : MonoBehaviour{
 
@@ -15,6 +16,8 @@ public class buttonContainer : MonoBehaviour{
     {
         //加载2.2角色选择场景
         PlayerPrefs.SetInt("DataFromSave", 0);
+        SceneManager.LoadScene(1);
+       
     }
 
     //加载已有存档
@@ -22,6 +25,12 @@ public class buttonContainer : MonoBehaviour{
     {
         PlayerPrefs.SetInt("DataFromSave", 1);//表示数据来自保存
         //加载2.3玩家游戏界面
+
+    }
+
+    public void OnOKGanme()
+    {
+        SceneManager.LoadScene(2);
 
     }
 
