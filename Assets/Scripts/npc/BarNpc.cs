@@ -15,7 +15,7 @@ public class BarNpc : Npc {
 
     private PlayerStatus status;
     private void Start()
-    {
+    {        
         status = GameObject.FindGameObjectWithTag(Tags.player).GetComponent<PlayerStatus>();
     }
 
@@ -58,6 +58,7 @@ public class BarNpc : Npc {
     void ShowTaskDest()
     {
         dessLadbel.text = "任务:\n你已经杀死了" + killConut + "/只小野狼\n\n奖励:\n1000金币";
+        print(dessLadbel.text);
         okBtnGO.SetActive(true);
         acceptBtnGO.SetActive(false);
         cancelBtnGo.SetActive(false);

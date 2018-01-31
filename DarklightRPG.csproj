@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="Assets\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
     <Compile Include="Assets\Effect\Effects_02\ScrollUV.cs" />
+    <Compile Include="Assets\InventoeyItemGrid.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -232,11 +233,17 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\CursorManager.cs" />
+    <Compile Include="Assets\Scripts\InventoeyItem.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\OjbectsInfo.cs" />
     <Compile Include="Assets\Scripts\character creation\CharacterCreation.cs" />
+    <Compile Include="Assets\Scripts\custom\CursorManager.cs" />
+    <Compile Include="Assets\Scripts\custom\LoadCsvTool.cs" />
+    <Compile Include="Assets\Scripts\custom\Singleton.cs" />
+    <Compile Include="Assets\Scripts\custom\Tags.cs" />
     <Compile Include="Assets\Scripts\npc\BarNpc.cs" />
     <Compile Include="Assets\Scripts\npc\Npc.cs" />
+    <Compile Include="Assets\Scripts\player\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\player\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\player\PlayerDir.cs" />
     <Compile Include="Assets\Scripts\player\PlayerMove.cs" />
@@ -244,8 +251,7 @@
     <Compile Include="Assets\Scripts\start\MovieCamera.cs" />
     <Compile Include="Assets\Scripts\start\PressAnyKey.cs" />
     <Compile Include="Assets\Scripts\start\buttonContainer.cs" />
-    <Compile Include="Assets\Scripts\tools\Singleton.cs" />
-    <Compile Include="Assets\Scripts\tools\Tags.cs" />
+    <Compile Include="Assets\Scripts\ui\FunctionBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
