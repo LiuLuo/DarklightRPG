@@ -235,7 +235,7 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
     <Compile Include="Assets\Scripts\InventoeyItem.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
-    <Compile Include="Assets\Scripts\OjbectsInfo.cs" />
+    <Compile Include="Assets\Scripts\ObjectsInfo.cs" />
     <Compile Include="Assets\Scripts\character creation\CharacterCreation.cs" />
     <Compile Include="Assets\Scripts\custom\CursorManager.cs" />
     <Compile Include="Assets\Scripts\custom\LoadCsvTool.cs" />

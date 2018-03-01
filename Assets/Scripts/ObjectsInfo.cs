@@ -5,29 +5,36 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 
-public class OjbectsInfo : MonoBehaviour
+public class ObjectsInfo : MonoBehaviour
 {
 
     // Use this for initialization
-    public static OjbectsInfo _instance;
-    public static OjbectsInfo GetInstance()
+    public static ObjectsInfo _instance;
+    public static ObjectsInfo GetInstance()
     {
         if (_instance == null)
         {
-            _instance = new OjbectsInfo();
+            _instance = new ObjectsInfo();
         }
         return _instance;
     }
-    private void Start()
+    Dictionary<int, ObjectInfo> csvDataDic1 = new Dictionary<int, ObjectInfo>();
+    public void Start()
     {
-        string filePath = Application.streamingAssetsPath + "/OjbectsInfo.CSV";
-
-
-   
-        Dictionary<int, OjbectInfo> csvDataDic1 =LoadCsv<OjbectInfo>(filePath);
+        string filePath = Application.streamingAssetsPath + "/ObjectsInfo.CSV";
+        csvDataDic1 =LoadCsv<ObjectInfo>(filePath);
        
-        OjbectInfo obj1 = csvDataDic1[1];
+        ObjectInfo obj1 = csvDataDic1[1];
         print(obj1.Name);
+        print(obj1.Id);
+    }
+
+    public ObjectInfo GetObjectInfoById(int id)
+    {
+        ObjectInfo obj1 = null;     
+        csvDataDic1.TryGetValue(id,out obj1);
+
+        return obj1;
     }
 
     public enum ObjectType
@@ -37,7 +44,7 @@ public class OjbectsInfo : MonoBehaviour
         Mat
     }
 
-    public class OjbectInfo
+    public class ObjectInfo
     {
         public int Id { get; set; }
 
